@@ -21,9 +21,9 @@ cargo, e o nome do funcionario.
 
 **Execução** 
 
-  Para a execução do  projeto foi nescessario a instalação da ferramentas citadas, contudo é de suma importancia ter um banco de dados na maquina de teste nesse caso mysql , porém caso o usuario em questão nescessite utilizar outro banco de dados é nescessario mudar no arquivo aplication.propiets localizado na pasta src/main/resource no arquivo tem as configurações nescessario para o funcionamento do mesmo.
+  Para a execução do  projeto foi nescessário a instalação das ferramentas citadas, contudo é de suma importancia ter um banco de dados na maquina de teste nesse caso mysql , porém caso o usuario em questão nescessite utilizar outro banco de dados é nescessário mudar no arquivo aplication.propiets localizado na pasta src/main/resource no arquivo tem as configurações nescessária para o funcionamento do mesmo.
   
-*obs: No caso do postgres é nescessario criar o banco antes da execução do projeto.*
+*obs: No caso do postgres é nescessário criar o banco antes da execução do projeto.*
 
 
 **Email:** 
