@@ -31,8 +31,9 @@ cargo, e o nome do funcionario.
 jguilherme58@gmail.com
 
 **linkdin**
-https://www.linkedin.com/in/jo%C3%A3o-guilherme-reis-317463187/
 
+https://www.linkedin.com/in/jo%C3%A3o-guilherme-reis-317463187/
+  
  
  
  
