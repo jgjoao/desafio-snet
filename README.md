@@ -15,8 +15,7 @@
 
 **Descrição**
   
-  O projeto consiste em um aplicação para cadastro de funcionarios ,cargos e departamento onde será possivel cadastra o departamento,
-cargo, e o nome do funcionario. 
+  O projeto consiste em um aplicação para cadastro de funcionario onde será possivel cadastra o departamentoe o seu cargo. 
 
 
 **Execução** 
