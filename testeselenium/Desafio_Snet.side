@@ -1,0 +1,4471 @@
+{
+  "id": "ad0889d3-73a1-4db7-9372-6cac38debf79",
+  "version": "2.0",
+  "name": "Desafio Snet",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "a5046ce8-381c-4922-8027-d4759055fe96",
+    "name": "Caso 001 - Cadastro de Departamento Em Branco",
+    "commands": [{
+      "id": "368335c7-db68-4ff3-a3c6-210e93e9014b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60b76cd4-64e8-46e2-b53b-96b7a51546be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "817da1e6-ff3c-4111-9a7c-4b563719ba58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db840ab7-85cd-4c28-af2a-9da7deddcdb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2171960f-9a9c-4765-a3e8-d689ba4b9660",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e4b673-aa6d-4bdd-a358-19bce65903f4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c2e5d71b-8721-4286-9630-6bc1556a004c",
+    "name": "Caso 002 - Cadastro de Departamento com poucos caracteres",
+    "commands": [{
+      "id": "c41d2418-afdb-4b34-92ba-42df663f946a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "179d4b60-12e8-4c24-9ff3-c84be95a723a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec3ab904-3d33-4609-a727-30e07eca2344",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62eb8511-2a1e-4845-907c-29001a5f09b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d727f43-1098-4ff0-ab89-7237e96009ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "TI"
+    }, {
+      "id": "96027386-17fe-443f-a777-cd2195eaf184",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c522a48b-f218-4efc-855b-5171700a415a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7e3aab9e-2e39-4fac-b951-4afb5a9f3a12",
+    "name": "Caso 003 - Cadastro de Departamento Conforme Especificado",
+    "commands": [{
+      "id": "cce337a1-e577-48ab-9589-58df33157f5d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e37d703-ae8b-4f18-a49f-f2349fa81027",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37d317a0-918a-4e42-ab03-f832855a381d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(2) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f73009-baa3-4800-9a82-bb1eb868805b",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d0a853-3b1b-46c3-984b-4fe521b0762e",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tecnologia da Informação"
+    }, {
+      "id": "9e306ef7-730c-479d-8762-01ca4c669a5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5448469-9e0d-47b0-b9f8-599746e382bb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "199bdbbb-94b2-4375-b61b-bf483a9897a6",
+    "name": "Caso 004 - Cadastro de Departamento com Caracteres Especiais",
+    "commands": [{
+      "id": "99956a55-6ec0-4c30-a69c-aa12ec770a81",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbcaed2c-887d-4c92-b58d-5b727d7a3d90",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1a616c7-b98b-4807-be43-2ec09fb4b9ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(2) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "815f036e-3ab5-4c75-bd46-5e94da837b1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bee360a-173c-433e-a804-e0b04e5217d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Recursos*&¨%$#@@!!@$__+++))(((Humanos"
+    }, {
+      "id": "b0a5e9e2-2ffc-4861-b1d0-ffca57e274bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8fe7d15-51b8-4823-bcb1-d6d39041d518",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dbb8cb3e-9900-4356-9125-4e94509e67cd",
+    "name": "Caso 005 - Cadastro de Departamentos já existente no banco",
+    "commands": [{
+      "id": "a04ffcee-9121-489a-9e3a-e69f62c7619f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20e7ca29-4208-450c-8a2b-c4b4432ed85f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de55263e-1c84-4707-b337-afb537d58b9f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c976a6a-1322-4eba-8527-690a8fadc598",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31d0de8f-7a96-40c5-a563-ea2f44a9cb64",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tecnologia da Informação"
+    }, {
+      "id": "548d4922-7bf4-470e-99a8-2393e0d259fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3b613ea-28a1-4d6c-a5f3-37cb1850b93b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86505dc1-685f-4a3d-b696-6c4bdf24568f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5ff53af7-93b8-4fe3-b030-104ddf690abd",
+    "name": "Caso 007 - Exclusão de Departamento Cadastrado",
+    "commands": [{
+      "id": "ca869a4a-a303-44c8-b4c0-0e7c8f2195e7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b65881f2-cdb5-49cf-9928-24f056ae7803",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f44fc066-b955-41de-99d0-095a681720f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listar",
+      "targets": [
+        ["linkText=Listar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/listar')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03092021-31d5-4359-9ebf-7a84685a36e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn_departamentos\\/excluir\\/2 > .oi",
+      "targets": [
+        ["css=#btn_departamentos\\/excluir\\/2 > .oi", "css:finder"],
+        ["xpath=//button[@id='btn_departamentos/excluir/2']/span", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b6d3f3c-d1b0-4d89-b752-3b60ab71efd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=ok_confirm",
+      "targets": [
+        ["id=ok_confirm", "id"],
+        ["css=#ok_confirm", "css:finder"],
+        ["xpath=//button[@id='ok_confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bafcfe58-7cdd-4973-b808-b353c01bbc54",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "717607a6-b08c-4d0a-b9e3-3a4f9b31cb5c",
+    "name": "Caso 008 - Edição de Departamento previamente cadastrado",
+    "commands": [{
+      "id": "97c92f71-6966-4137-b0a3-2955fcb54ae0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c664d4a-d0e7-4fd8-97d7-ee290be3d327",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8b774e8-2fd8-44de-833d-148f8adaee65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listar",
+      "targets": [
+        ["linkText=Listar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/listar')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c38589-b2bb-4704-8e6d-78e46e0cad22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oi-brush",
+      "targets": [
+        ["css=.oi-brush", "css:finder"],
+        ["xpath=//div[@id='listagem']/div/table/tbody/tr/td[3]/a/span", "xpath:idRelative"],
+        ["xpath=//td[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c63e44b2-ab91-41bc-8602-92160da5ccd8",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5589d57-2e55-4e04-8940-6c0125b57a84",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tecnologia da Informação(TI)"
+    }, {
+      "id": "fe55756e-e3d8-457f-ac19-40cf7eeb2fc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e735be31-94ea-4ddf-8f54-676574c1fa73",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "67915ac9-1de3-423d-a465-df69dfeb997e",
+    "name": "Caso 009 - Cadastro de Cargo sem nenhuma informação",
+    "commands": [{
+      "id": "41746e22-1a8b-4773-9f90-3aedf3796553",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a06bc86a-590e-48cf-9c52-a25ac930268f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b66fb570-69be-4f0c-926c-1a7e6b40ac58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9309fbd1-8531-416c-aed4-5d64842a4441",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04664d2c-0af7-4e81-889f-2b62a0668276",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "45a6c6bf-352f-4bf7-beda-2ad51073757d",
+    "name": "Caso 010 - Cadastro de Cargo com poucos caracteres e sem Departamento",
+    "commands": [{
+      "id": "eafc9b1b-c33c-4455-be6b-19c86c61c08a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f8761d6-ead6-42b1-8314-fd7a228a5aab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "474e19fc-441d-43c8-852f-a3b293ef84a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f395663e-6686-4b65-a5e4-6a403dc83f80",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f02e19-eade-4afa-b4a6-cc954a67aefa",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "TI"
+    }, {
+      "id": "e9fc419b-02cd-48af-aa2a-ee9f3642d3ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddea902e-02a9-42cf-8197-6bda0e8d3dca",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a72fac8e-c156-4f51-85e6-1ecaf9d98282",
+    "name": "Caso 011 - Cadastro de Cargo sem nome do cargo e com Departamento",
+    "commands": [{
+      "id": "c7adcd46-58db-45f2-a878-5de590366401",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70a865fa-d9ac-4a7d-87d3-51501175fbb2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8dd12fe-58a0-4c83-a91b-4c92ac44953f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[3]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0264c195-926b-4ddf-b2ea-18a843086857",
+      "comment": "",
+      "command": "click",
+      "target": "id=departamento",
+      "targets": [
+        ["id=departamento", "id"],
+        ["name=departamento", "name"],
+        ["css=#departamento", "css:finder"],
+        ["xpath=//select[@id='departamento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c7816f5-37d8-48e9-897c-c1769a937918",
+      "comment": "",
+      "command": "select",
+      "target": "id=departamento",
+      "targets": [],
+      "value": "label=Tecnologia da Informação(TI)"
+    }, {
+      "id": "4a9471d3-3596-4eab-badd-d3d2c457fae5",
+      "comment": "",
+      "command": "click",
+      "target": "id=departamento",
+      "targets": [
+        ["id=departamento", "id"],
+        ["name=departamento", "name"],
+        ["css=#departamento", "css:finder"],
+        ["xpath=//select[@id='departamento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c862dd30-1aa6-4e3e-b632-8e81d933ff1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29dd8823-83c8-4b05-ae9c-f22c7b464767",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f1441c67-c17a-427d-b092-6358c6ec0f57",
+    "name": "Caso 012 - Cadastro de Cargo com Departamento e nomes conformes",
+    "commands": [{
+      "id": "2ea38d54-3dce-4743-b2a3-3690b4348747",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6394348-f3f4-41c2-a4d1-e8e4868eb036",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bdb3cb9-1e5e-450a-a753-0157efb7553d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cee3bfde-ab36-4076-a4ed-43912920a601",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1af94b03-d04b-4612-9a91-ab8fcd74807a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a9241b9-2216-4906-ac3b-3b34fb900881",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Analista de Suporte"
+    }, {
+      "id": "87916101-4a3f-4f27-91de-57aa6628e5fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=departamento",
+      "targets": [
+        ["id=departamento", "id"],
+        ["name=departamento", "name"],
+        ["css=#departamento", "css:finder"],
+        ["xpath=//select[@id='departamento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56518779-7173-4969-a7ba-63154d04ff73",
+      "comment": "",
+      "command": "select",
+      "target": "id=departamento",
+      "targets": [],
+      "value": "label=Tecnologia da Informação(TI)"
+    }, {
+      "id": "2b130cfe-67ff-473d-8294-ced168048b9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=departamento",
+      "targets": [
+        ["id=departamento", "id"],
+        ["name=departamento", "name"],
+        ["css=#departamento", "css:finder"],
+        ["xpath=//select[@id='departamento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e652edd3-6d8c-420e-9cdd-a6ad550926d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49afa1e1-5fdf-46d8-b740-32f23fdb6a65",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dcc3168c-8039-4423-8632-7d5b621668b7",
+    "name": "Caso 013 - Listagem de Cargos cadastrados",
+    "commands": [{
+      "id": "d32ad006-36b6-470c-acd0-fd57329c0c2f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80c116e0-3394-420b-a64a-feaf7ec5bf69",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3afbd1e9-5f6a-4d3b-8244-6e12d87504d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57d4536f-6a42-4289-9999-baf3975b6620",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > span:nth-child(2)",
+      "targets": [
+        ["css=.btn > span:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Listar Cargos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d23fe39-84c7-4651-bb2a-15408b6ed24d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/listar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79000003-acb5-4103-ac69-169983e0cdb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(1) > .nav-link > span",
+      "targets": [
+        ["css=.nav-item:nth-child(1) > .nav-link > span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d78ca666-98aa-48b7-88de-96a4df6a9352",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/listar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "861e67e1-2ece-4f23-a537-85b9f77095c6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fe059cae-e7f5-4f7c-83d7-8daf8d7e396a",
+    "name": "Caso 006 - Listagem de Departamentos Cadastrados",
+    "commands": [{
+      "id": "f613ad71-7eb3-4e3f-adfd-a23a5bfd6e59",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e22b7548-f311-4118-bd81-a0ee2691e503",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb063c0f-dab9-4087-96c9-f23d1aa5a9d0",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "105,24"
+    }, {
+      "id": "3b29b852-4ddf-4a15-aa12-01e3d7886fbc",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "105,24"
+    }, {
+      "id": "8086b2fa-f4ca-48ae-97d7-fd21131a9a90",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "105,24"
+    }, {
+      "id": "7b4d1c5f-f1d5-4666-9063-0a0cc628f54e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/departamentos/cadastrar')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e622db3-28b9-42bf-8f13-191a1cb48911",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > span:nth-child(2)",
+      "targets": [
+        ["css=.btn > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='navbarsExampleDefault']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Listar Departamentos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df6470f4-991f-4c51-8f25-cd32d18a0b8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(1) > .nav-link > span",
+      "targets": [
+        ["css=.nav-item:nth-child(1) > .nav-link > span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b21435ce-609b-4129-908c-e5ba244e1115",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(2) > .nav-item:nth-child(3) span",
+      "targets": [
+        ["css=.nav:nth-child(2) > .nav-item:nth-child(3) span", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Listar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec5d68a0-02f4-48df-a3fa-9a65f553e0c4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "702314fe-ef5b-4373-bbd6-e8dcddd7f7ec",
+    "name": "Caso 014 - Cadastro de Cargo já presente no sistema",
+    "commands": [{
+      "id": "d2c83458-dca2-4c53-9c2a-bd43df567589",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c325e3aa-f42f-402b-8407-6c890b3cc478",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c59b5dd-faaf-4195-800f-461eba175b12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(3) span",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(3) span", "css:finder"],
+        ["xpath=//ul[3]/li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "649a41f1-66d0-474b-929c-1b89cfc5e44c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[3]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1ba4678-0f85-4a27-bd7e-ca6d1e265a50",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b0fd6d-4572-4ab4-afb2-a64bb1a6b986",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Analista de Suporte"
+    }, {
+      "id": "69c825d0-a1dc-4439-9272-abb43b587943",
+      "comment": "",
+      "command": "click",
+      "target": "id=departamento",
+      "targets": [
+        ["id=departamento", "id"],
+        ["name=departamento", "name"],
+        ["css=#departamento", "css:finder"],
+        ["xpath=//select[@id='departamento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b71029fe-61b0-4285-abdc-198961c67469",
+      "comment": "",
+      "command": "select",
+      "target": "id=departamento",
+      "targets": [],
+      "value": "label=Tecnologia da Informação(TI)"
+    }, {
+      "id": "4bed75cd-0fc5-4bcb-9a5c-168daa294829",
+      "comment": "",
+      "command": "click",
+      "target": "id=departamento",
+      "targets": [
+        ["id=departamento", "id"],
+        ["name=departamento", "name"],
+        ["css=#departamento", "css:finder"],
+        ["xpath=//select[@id='departamento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb065542-b21e-42f7-a151-7dab206e13cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7779f68b-847d-45c5-b278-d0e8492a8a9f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "39afd614-c69a-4bd7-995a-11e501ea9539",
+    "name": "Caso 015 - Cadastro de Funcionário em branco",
+    "commands": [{
+      "id": "ff9381fc-752e-4b53-8b14-3a13548b3950",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dcdc10f-415d-490e-ac01-2918cbb85588",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf0624fe-e76c-43a1-b781-6a768902c66f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d9e318f-d90a-4a99-b058-120fc64294dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f420b5-db8a-466e-b838-26bd698eeaf7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cd33101f-75b1-4d53-a42c-6a25c11b178e",
+    "name": "Caso 016 - Cadastro de Funcionário com nome apenas",
+    "commands": [{
+      "id": "e8a32bfe-7278-42bc-9080-b7f400ffaa79",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c88b985f-c43c-404c-a53d-5eb9ba9d7af1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1461bfc4-3ce4-4976-8768-566f844a073d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df62ae96-924a-4e37-ab3c-7fac273a851c",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3a175a6-83fb-4092-8baf-02a6084edcab",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João"
+    }, {
+      "id": "c0119d97-7809-4487-bad5-2c6855f438a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1441f034-22e4-4363-931b-34ca61bd3bf8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7f06b101-f654-419b-a380-b32cf48338e1",
+    "name": "Caso 017 - Cadastro de funcionário com Salário apenas",
+    "commands": [{
+      "id": "06fe174a-afe9-46be-8ce2-81054c9fbc04",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "384c02ea-6dcb-45b3-8788-40eb6857d001",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29e04711-7264-4321-9869-5c27efdb2cb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47ec4755-0549-4920-97d7-0548007a35d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c12da73-17d2-435a-803f-dd26f32f1d4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "200,00"
+    }, {
+      "id": "f37cdec0-623e-4408-bcf9-32630bcb35c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9131f0e3-88ff-4da1-9bd2-82b6c31bb6eb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "558b20fd-66ed-429d-aeb2-63bd3b6b5da4",
+    "name": "Caso 018 - Cadastro de Funcionário com letras no campo de salário",
+    "commands": [{
+      "id": "63b58fc6-32dd-4340-9628-1af8d625fa98",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd6a42e5-4d3b-4b7e-837e-b12322942887",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2357e0b6-9f06-4396-b735-d75b054514fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3b23edd-acf2-4c8a-9495-eae86a6b2e98",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a8732ee-90be-4dbc-85c4-a2f89ec56fc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0ff8b8c-4e19-464a-bc4d-77cc8313fcff",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71e790c5-2379-4fd8-8959-4565167df346",
+      "comment": "",
+      "command": "click",
+      "target": "css=.layout-main",
+      "targets": [
+        ["css=.layout-main", "css:finder"],
+        ["xpath=//body/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ebb68e7-0854-46a7-a508-9d9a758699b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c0d571-d095-4d2c-9551-a7ad426ae0c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.layout-main",
+      "targets": [
+        ["css=.layout-main", "css:finder"],
+        ["xpath=//body/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f953b9-bfdd-407e-bdfe-c419efd839f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asjoisadbasdbjio"
+    }, {
+      "id": "3bfe084a-867b-45f4-a5b3-141c4624bec6",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a40378dd-d839-4be7-b780-79639e194d40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.layout-main",
+      "targets": [
+        ["css=.layout-main", "css:finder"],
+        ["xpath=//body/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba53ded9-01b9-4f3b-9ce2-3a4f1d330d38",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7130cc3e-dbe9-425d-b2cb-d404c0b20836",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e40d00fc-50bf-43e6-b587-2a29d6c73f68",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "efa4791a-ce87-4d93-9fb3-1638ac7f9be2",
+    "name": "Caso 019 - Cadastro de Funcionário com apenas data de entrada",
+    "commands": [{
+      "id": "597b2e59-5e9e-48f8-b6a6-a07eab787ec1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a04329b-3193-47ac-8ad0-21772a0c87a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72af3cd3-8302-4df4-967e-1b6d2db7715e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e10e1e53-f6de-4030-b6ed-f58254c2f09b",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b852d025-f4e3-4d7f-8064-778a4c7b304a",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0001-02-24"
+    }, {
+      "id": "a2e2560f-6ac3-400e-a327-d95bedb1ed50",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0012-02-24"
+    }, {
+      "id": "4970833d-fae8-48aa-8059-82310d254e37",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0123-02-24"
+    }, {
+      "id": "ced5339f-1822-4c5e-94d7-c276409b9501",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1238-02-24"
+    }, {
+      "id": "6fa9a19c-0604-49a4-80c1-70275d372f2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a295908d-6591-416e-96a4-db5430653cf6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c01bb468-bc39-4657-998d-e2b800e3e9e7",
+    "name": "Caso 020 - Cadastro de Funcionário com apenas data de saída",
+    "commands": [{
+      "id": "b0cc1e0c-8950-4aba-99e8-85de2ac9e8fb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03491d17-54be-46b2-a468-74ba98cd27d4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8c6640b-3826-47dc-abd3-0831b36f6959",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80f4367a-9338-4ddc-a26b-08b95d75f843",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a41bc71-7e8c-41d2-8f4c-6e8887aecf66",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0001-08-26"
+    }, {
+      "id": "74540bc7-695f-44cd-be12-4d86289ab231",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0019-08-26"
+    }, {
+      "id": "3670613d-bb90-447e-b404-ce4360a616e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0198-08-26"
+    }, {
+      "id": "86b47f97-5bc7-4954-b0af-0db66b14c3da",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1982-08-26"
+    }, {
+      "id": "1c0109ca-25f0-43ba-a74c-ea2045b2d896",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6adbe9-c391-4c75-9fce-df322d680ea8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voltar a página anterior",
+      "targets": [
+        ["linkText=Voltar a página anterior", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar a página anterior')]", "xpath:link"],
+        ["xpath=//a[@type='button']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'javascript:history.back()')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar a página anterior')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b63dc380-2d5f-43f3-808a-e0f17053f5c4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c2c59c5d-aacf-4bfc-b1d0-d32b74b90199",
+    "name": "Caso 021 - Cadastro de Funcionário constando data de entrada e data de saída",
+    "commands": [{
+      "id": "fbea33d4-a516-4501-a8c8-d901dfc9de56",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b99e850d-2931-4c40-b1ac-e0cba4a42b68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6da2007-ff28-4076-bb9e-3064cf39ba4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fde19d5b-983e-409f-8f81-39d75ce4bda8",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7455a55-32df-426a-88bf-484ba95ac1e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0002-08-26"
+    }, {
+      "id": "6f8319bd-ceb1-4845-bab6-444c349c9e96",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0020-08-26"
+    }, {
+      "id": "a6bd9b2e-1269-4005-8de3-fc6ac288f8ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0201-08-26"
+    }, {
+      "id": "7086f5dd-dbeb-45b9-8056-759d0c750972",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2010-08-26"
+    }, {
+      "id": "45c1bd63-292c-46cc-bc68-a63aae7eb113",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-08-26"
+    }, {
+      "id": "b2e6c0cd-36d2-4f68-ac4f-b0f16cb3c7b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-08-26"
+    }, {
+      "id": "e940e221-3ef6-4863-8735-5bc536d6ab19",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0201-08-26"
+    }, {
+      "id": "0bf1f6ca-80d2-4d05-b9c1-82e97f4a22d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2012-08-26"
+    }, {
+      "id": "53a5d0c6-dfad-4f74-ace3-011d31a0a98e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0ccb61e-b1c1-4bc6-bdc4-ff64d29a496d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e75b0fbc-99f9-46ed-8e41-f86596c8b357",
+    "name": "Caso 022 - Cadastro de Funcionário onde a saída acontece antes da entrada",
+    "commands": [{
+      "id": "2f48fb42-e919-4ad0-8e36-4f23073a728d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6526b6b6-1d70-4a8f-9582-63ab634afbbe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e854957-c3d3-4cc4-992e-c73a7eb40975",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5959f287-813f-4e81-98b4-8f7e0a09fb8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf10f59-4728-4ac8-a535-7b31426000ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be135a93-f001-4ddd-a650-16c66719182c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73cb2bd5-0bd8-4783-90e5-696d1da47b3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0002-09-19"
+    }, {
+      "id": "26fd00b0-65f9-4225-900a-23417e21c945",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0020-09-19"
+    }, {
+      "id": "acc1aabb-0167-41f6-afa4-03ef8272a1b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0201-09-19"
+    }, {
+      "id": "ca680033-5e6f-49be-907a-31e957513992",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2010-09-19"
+    }, {
+      "id": "26db9882-6aea-4f8e-be34-1993281c0bfb",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d1da9fb-99e4-4191-8329-ac25a3e236ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-08-19"
+    }, {
+      "id": "c1193c82-cd24-46f0-a2ba-43eec38237ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-08-19"
+    }, {
+      "id": "4478f2ca-90cc-4633-b78a-9423275c4e4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0201-08-19"
+    }, {
+      "id": "aeba0c2e-d860-42f8-b33d-98f392fffe76",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2010-08-19"
+    }, {
+      "id": "c8e3bdc9-fe19-46ce-ae1a-4b1721131a23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45578f2e-7b24-4f13-969d-12afb8f889d7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a773ef69-4b13-4993-bfe8-4d31cb24476b",
+    "name": "Caso 023 - Cadastro de Funcionário constando apenas cargo",
+    "commands": [{
+      "id": "49442ac1-7698-4aa1-88d7-6a5614b1e719",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bed84bf1-0ddf-4012-9d97-28850348b14a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c472332-a99e-477b-ac49-964d58900ce2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e25e389-3359-4984-9b33-a2c475dda151",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(3) > .form-group",
+      "targets": [
+        ["css=.form-row:nth-child(3) > .form-group", "css:finder"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fb526c9-0611-4067-a5ce-0b50675d4cbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5b300a5-5ca6-413b-8f22-e419917e4c6a",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Analista de Suporte"
+    }, {
+      "id": "a8d3c405-1e72-45aa-bf3b-3d7b8fbf730e",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15cc22f7-3a8a-40a7-ac34-a5a80a13aa6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "605be0c6-ad2f-4881-b08b-b28c3c7f24d7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "911d7053-dfc7-4f8e-ad23-9338369a1918",
+    "name": "Caso 024 - Cadastro de Funcionário constando apenas cidade",
+    "commands": [{
+      "id": "c6ae83c2-a8d7-42fc-90cc-5d38dce1f5bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7f20e9b-c674-4f63-959b-bec65a64d1f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5d8bc21-a98b-47dd-9098-d25d0b35547a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "985e01d7-a444-4659-a5ed-2b5bac97c7be",
+      "comment": "",
+      "command": "click",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db741470-efee-4621-82e5-02fee4041c14",
+      "comment": "",
+      "command": "type",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "João Pessoa"
+    }, {
+      "id": "55bd7229-21b8-478e-8947-4769f4607429",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82513470-314d-4133-a599-c8fd13f396ba",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5e3f98b3-e7c5-4ebb-9171-16c67a6c1c86",
+    "name": "Caso 025 - Cadastro de Funcionário constando apenas logradouro",
+    "commands": [{
+      "id": "7abba97f-f6c9-4567-a64c-25fc338e6494",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0aab0aad-077a-4936-97f6-ed8631b6ffe7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d25f5a9-023e-4bbf-837d-e7e946e31c22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75483b2b-6cae-43c7-a15f-611dd469ba4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=logradouro",
+      "targets": [
+        ["id=logradouro", "id"],
+        ["name=endereco.logradouro", "name"],
+        ["css=#logradouro", "css:finder"],
+        ["xpath=//input[@id='logradouro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8032e44c-19fc-4f8d-b6d2-4bdecbbddb89",
+      "comment": "",
+      "command": "type",
+      "target": "id=logradouro",
+      "targets": [
+        ["id=logradouro", "id"],
+        ["name=endereco.logradouro", "name"],
+        ["css=#logradouro", "css:finder"],
+        ["xpath=//input[@id='logradouro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua Carteiro Olivio Pontes"
+    }, {
+      "id": "20c7fbe6-4db4-4869-83e7-f3c5eb90998e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.layout-content",
+      "targets": [
+        ["css=.layout-content", "css:finder"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3401f17-5d90-413a-99a1-304e95e09ca5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64273cdb-a891-4e80-8ed5-a6074dd95e39",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c57fef77-d015-4ac9-a40f-c7e55f1bc9de",
+    "name": "Caso 026 - Cadastro de Funcionário constando apenas número da casa",
+    "commands": [{
+      "id": "cdb6f659-6b04-407d-b035-28f93c0ddf2c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8403eb2e-6e3a-42e3-b1ad-765687614d86",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c899e44-798f-4f57-aaed-7089b1211b55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6dfb3db-4c80-428e-a8ae-2401aee812d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=endereco.numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d4053a-c0f7-4704-9c93-c0f7f8f4a308",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=endereco.numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "1b97f91d-755e-4589-9dbb-9faab0b66d36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff0a193f-ef0a-4ca7-9219-36b0bb490feb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "544271cd-2a8f-4140-a26f-22a8b65f4794",
+    "name": "Caso 027 - Cadastro de Funcionários constando apenas complemento",
+    "commands": [{
+      "id": "63031db8-6a2a-4b69-afbf-c875d8b92805",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b286db0d-8eb7-4145-9e64-7736ab401b82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53d69c05-6912-4fbb-95e2-f143b53514a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a849fab-ff9d-483b-b4ca-6df64491ffe4",
+      "comment": "",
+      "command": "click",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["name=endereco.complemento", "name"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3145910e-2198-47a4-a9cf-74fcf570ffa4",
+      "comment": "",
+      "command": "type",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["name=endereco.complemento", "name"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Apartamento"
+    }, {
+      "id": "1d7b5c02-5092-49a4-b240-81bf9cea42a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61778af1-fc38-4ddd-974f-3ef1bb869a8a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ca539cd8-549f-4d61-89dc-e3cb853829d8",
+    "name": "Caso 028 - Cadastro de Funcionário constando apenas Bairo",
+    "commands": [{
+      "id": "e5e984dd-651b-4c33-9ecb-23e37fa239b1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d821fd5-493b-44c9-b030-5bd46d6036da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e26e42e-1069-4962-8d10-2e6652b4edcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b27719e1-b940-434f-be79-ca39c4e66b7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=endereco.bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b134a28-5d24-4301-8bb8-8a41c1594d79",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=endereco.bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "Jardim São Paulo"
+    }, {
+      "id": "7cf201ac-2161-47f8-8b6c-a5120da47d68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9dc2987-b711-4573-9710-52dfb25b3c8d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bb99eab5-5469-4656-b664-d70ded484214",
+    "name": "Caso 029 - Cadastro de Funcionário constando apenas UF",
+    "commands": [{
+      "id": "1049d6f6-d6cb-466c-bcbe-9bc5cf3d05af",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da0e8874-d0b2-46b2-8f77-7ac9435c6da1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc58c5e4-b3dc-4654-a14e-03edc8e8c638",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c49bc38-aedb-49d2-9d3b-732901912140",
+      "comment": "",
+      "command": "click",
+      "target": "id=uf",
+      "targets": [
+        ["id=uf", "id"],
+        ["name=endereco.uf", "name"],
+        ["css=#uf", "css:finder"],
+        ["xpath=//select[@id='uf']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e04aac5-9ddf-4d6a-84ed-4934e5902dbc",
+      "comment": "",
+      "command": "select",
+      "target": "id=uf",
+      "targets": [],
+      "value": "label=PB"
+    }, {
+      "id": "9356db0d-7d65-4ffb-9a2b-bdcbd7f49dfe",
+      "comment": "",
+      "command": "click",
+      "target": "id=uf",
+      "targets": [
+        ["id=uf", "id"],
+        ["name=endereco.uf", "name"],
+        ["css=#uf", "css:finder"],
+        ["xpath=//select[@id='uf']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f147382-bd78-4bb5-9fe5-6385e0bfc281",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae2236b2-b2a8-4e67-8569-c93aa42bc8ca",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "484f6b42-a030-418b-b21f-38a59f366051",
+    "name": "Caso 030 - Cadastro de Funcionários constando apenas CEP",
+    "commands": [{
+      "id": "f3fdfe79-a58a-4974-9c8a-46ae1b4acc21",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6de972c4-7e9d-496a-ad7f-3b28d2f63f16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f4317e-a1b7-4ef6-8534-fcd5ee9623fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f01a4af7-66d8-4b20-a7d8-ce346e88aae4",
+      "comment": "",
+      "command": "click",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=endereco.cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa5f1b80-6f36-454c-983f-c84050d11939",
+      "comment": "",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=endereco.cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "58053-020"
+    }, {
+      "id": "775be0ab-7c64-4ee8-b105-b090fd5d395e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.layout-content",
+      "targets": [
+        ["css=.layout-content", "css:finder"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e471ec6e-d896-491e-b138-dc371d22e0f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0ca3fc5-015f-475f-8213-68a68d1454c9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "254072bb-1a01-4275-9f82-2bf19dfebf44",
+    "name": "Caso 031 - Cadastro de Funcionário conforme requisitado",
+    "commands": [{
+      "id": "72eea41b-6ba2-432f-a0cf-016b7f3515d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdc9f11a-ebd6-40b4-9393-1e67abc51986",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53ab2426-5ec4-4989-aa8e-d16795d512bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "390e078e-b34e-492e-b837-775577cd8776",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91640266-4a78-4714-b74e-84c666c8994b",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João Guilherme Monteiro Reis"
+    }, {
+      "id": "a1580ec5-0b1e-4295-9d27-a5f8614f7e21",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "0b26f277-d1c6-412c-9b60-a0dbee1627f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2.500,00"
+    }, {
+      "id": "dfad5ed9-3b96-4edc-8955-f1d933b6be50",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf4f0450-05d5-46d9-a877-47cac2f196cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9300ab7-2bff-4a38-9a95-da842c3701ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0002-03-02"
+    }, {
+      "id": "fc5ff1bc-53a4-4a6a-bb6d-d171c7c80206",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0020-03-02"
+    }, {
+      "id": "4b9f631a-d96c-4bb6-a700-53e4ebb1d057",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0202-03-02"
+    }, {
+      "id": "2812758e-1bb8-42c3-ba48-f742369a7783",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2020-03-02"
+    }, {
+      "id": "470f03cb-c7a6-4481-b3eb-0f5fe0eab814",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e411a9b-d491-4c3e-a66e-9014e4a7a6e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-03-02"
+    }, {
+      "id": "a4336356-2b4b-425a-a2cc-7bc9e5e5e170",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0021-03-02"
+    }, {
+      "id": "20251195-38a3-457a-a35f-324e29281e9a",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0210-03-02"
+    }, {
+      "id": "189eb957-32f5-4675-81c6-8c66056cc440",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2100-03-02"
+    }, {
+      "id": "bdfe93f2-5615-4455-a719-1fb8f8b3f3ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6665106c-540f-4a04-95dc-451d2a0a4aa8",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Analista de Suporte"
+    }, {
+      "id": "5ce37218-809f-4a66-a803-0dd61c528143",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "268f324b-e788-42cd-9957-3d24473cdf7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0373d282-b1a9-4207-8422-96a072f90bcf",
+      "comment": "",
+      "command": "type",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "João Pessoa"
+    }, {
+      "id": "17b039bc-ebdb-47aa-bbad-5d75968134b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=logradouro",
+      "targets": [
+        ["id=logradouro", "id"],
+        ["name=endereco.logradouro", "name"],
+        ["css=#logradouro", "css:finder"],
+        ["xpath=//input[@id='logradouro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua Carteiro Olivio Pontes"
+    }, {
+      "id": "523e48b3-f5a5-4038-9863-8fed6a7c50b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=endereco.numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "405"
+    }, {
+      "id": "3cfe47b3-09ff-4319-b297-843e21426a11",
+      "comment": "",
+      "command": "type",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["name=endereco.complemento", "name"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Apartamento 202"
+    }, {
+      "id": "345a97b7-e85a-47ca-af48-6b304c3529fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=endereco.bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "Jardim São Paulo"
+    }, {
+      "id": "09878d28-22e3-4baa-95dd-6606bcc75f5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=uf",
+      "targets": [
+        ["id=uf", "id"],
+        ["name=endereco.uf", "name"],
+        ["css=#uf", "css:finder"],
+        ["xpath=//select[@id='uf']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce3f3bea-09ad-4765-ad9c-d01e1df638ac",
+      "comment": "",
+      "command": "select",
+      "target": "id=uf",
+      "targets": [],
+      "value": "label=PB"
+    }, {
+      "id": "ec9e0cbf-1db3-467a-9eba-c2ab1ccdd12b",
+      "comment": "",
+      "command": "click",
+      "target": "id=uf",
+      "targets": [
+        ["id=uf", "id"],
+        ["name=endereco.uf", "name"],
+        ["css=#uf", "css:finder"],
+        ["xpath=//select[@id='uf']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "298238fe-5671-4b51-8cbe-3ecc043ed650",
+      "comment": "",
+      "command": "click",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=endereco.cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49490ef2-50bf-4cc6-9a20-85293e844e9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=endereco.cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "58053-020"
+    }, {
+      "id": "746de1d5-88dd-40b3-9ee7-4b9847b3eca7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a88578-4011-4cd3-bfee-5744badbdb79",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f3d955c1-3f76-4823-9697-f9aa3d1c8c49",
+    "name": "Caso 032 - Listagem de Funcionários Cadastrados",
+    "commands": [{
+      "id": "746eb800-313c-4a31-b7ff-57786466468c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca0e0335-0870-4247-a66c-e8863ce8dfe7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31a69f0c-8c4e-4ae6-953e-5ba5550c526c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(3) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(3) span", "css:finder"],
+        ["xpath=//ul[4]/li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c42b3b6-17f6-48bc-a58e-e82cdefcea9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "594feff2-1f8e-437a-a4fe-45401642c36c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > span:nth-child(2)",
+      "targets": [
+        ["css=.btn > span:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Listar Funcionários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21dd6734-49d7-40f6-8945-7efb893558d6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "44bbc4de-b5bb-4b6b-baad-1b0fb6bf60ae",
+    "name": "Caso 033 - Edição de Cargo existente já atribuido a um funcionário",
+    "commands": [{
+      "id": "2d414049-33d3-4de3-8a64-edf74c2493d3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c61e8513-7a0a-4e0f-a609-6cb5c8cd8396",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b198ea1-ce98-4d2e-90fd-027d693eea04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(3) > .nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(3) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cargos/listar')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "594bb03a-6084-4a02-a862-4ee19b9e3e06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//div[@id='listagem']/div/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cargos/editar/1')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e27e378e-83fd-4892-8a52-f12816c8fd7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "161a2361-1c77-41ef-a85b-0c372cfba59c",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Analista SysAdmin"
+    }, {
+      "id": "cf9d4cad-ad4a-49fd-9fd9-5cadaf0cf34c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b8166a0-36ad-49da-9784-971a2bbca951",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/listar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc8c659-307b-48d2-9db3-50c1f6147730",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c94669d2-6f84-4b69-aec8-116dfccc4144",
+    "name": "Caso 034 - Crianção de funcionário já cadastrado no sistema",
+    "commands": [{
+      "id": "b2376489-60a1-4a5e-bd9c-324a8661af1e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16eddf57-9331-4258-98e6-cc8143f5479e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9560e63c-2fdf-471d-a387-b37bb22672e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/cadastrar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd14f0e3-90f4-40c4-893d-dd915bb17f04",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da941577-3d8e-4a03-84c4-6a9c652873ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João Guilherme Monteiro Reis"
+    }, {
+      "id": "28030803-ddaa-4278-94ff-3eda19a78948",
+      "comment": "",
+      "command": "type",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "João Pessoa"
+    }, {
+      "id": "d1dc77b2-41c2-48b9-a237-0549d4f05c76",
+      "comment": "",
+      "command": "type",
+      "target": "id=logradouro",
+      "targets": [
+        ["id=logradouro", "id"],
+        ["name=endereco.logradouro", "name"],
+        ["css=#logradouro", "css:finder"],
+        ["xpath=//input[@id='logradouro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua Carteiro Olivio Pontes"
+    }, {
+      "id": "76c4aa4f-cc43-4efe-b35a-b171269a46f9",
+      "comment": "",
+      "command": "select",
+      "target": "id=uf",
+      "targets": [],
+      "value": "label=PB"
+    }, {
+      "id": "47f0be28-6398-4dc1-a66c-51b792467a7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=endereco.cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "58053-020"
+    }, {
+      "id": "0a25963f-1538-4903-8671-961099d34673",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "783c32b7-86e6-48f9-a4b2-10b62743031f",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2.500,00"
+    }, {
+      "id": "078d6775-cd2c-4bff-80d3-afaad7252746",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "889b8613-3554-42f6-99d2-8760e55b672c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9fa5ae2-4f8c-44cb-967f-c60cb6bf6ba7",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0002-03-02"
+    }, {
+      "id": "34e2a612-293d-49d6-b4e4-ac61b1d7a600",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0020-03-02"
+    }, {
+      "id": "fda66feb-34f4-4d30-bf40-6c86a614bdd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0202-03-02"
+    }, {
+      "id": "4ceee944-4fa0-492e-a22e-8cc0ddec5b99",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2020-03-02"
+    }, {
+      "id": "8bcfb2de-7c13-4475-a3d7-c741fc7a1453",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-03-02"
+    }, {
+      "id": "df048ade-2303-4582-ba32-83e5698340d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-03-02"
+    }, {
+      "id": "28746d71-6002-429f-ad34-4d7d6dfc2695",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1560cfb2-9927-4c7c-a63f-6dbbb432a386",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0001-03-02"
+    }, {
+      "id": "24fe9c35-f8b2-4211-8328-a45d3744c76e",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbca77f2-9e1e-460a-8385-cbd83207c60a",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-03-02"
+    }, {
+      "id": "5e942d57-d62d-41e3-8ff2-21d15d6f6ccc",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0021-03-02"
+    }, {
+      "id": "8c9c11da-d025-4463-9804-773c9a7f215b",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0210-03-02"
+    }, {
+      "id": "607c68f0-26e6-42f1-9c16-f52d386601b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2100-03-02"
+    }, {
+      "id": "fea036dd-3e2d-422c-8b63-91f844cd12d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b641e61b-265a-41a6-bbc5-31fd547c5599",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Analista SysAdmin"
+    }, {
+      "id": "7003ff72-dfd0-4992-acd6-82853462a844",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d04bcded-e0ff-4c41-847e-f20b69c1999f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(5) > .form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-row:nth-child(5) > .form-group:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44977724-e1cf-472a-81a4-5a002167174b",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=endereco.numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "437a3a13-0968-40e6-99f4-5457d6c9298d",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=endereco.numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "405"
+    }, {
+      "id": "14bb948e-8312-4a75-adc8-87949efcf4d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["name=endereco.complemento", "name"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c09cf7d0-de1d-48f6-b00c-373e4c273fda",
+      "comment": "",
+      "command": "type",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["name=endereco.complemento", "name"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Apartamento 202"
+    }, {
+      "id": "2141058e-d45c-49e4-8875-21aa600e1913",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=endereco.bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f7a934-bd8b-4161-903f-9a81b679c5d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=endereco.bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "Jardim São Paulo"
+    }, {
+      "id": "364fbe0f-c027-461e-bcb1-2f69365e499b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fb25c8a-f707-49e3-a709-6bfba98b0ac1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1f6bf4de-5d5d-43fe-a102-0078e152a081",
+    "name": "Caso 035 - Criação de funcionário com mesmo nome e informações diferentes do presente no banco",
+    "commands": [{
+      "id": "a657a021-cad9-4d67-aa57-288cff27fd3c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "233f96e0-9b2b-426f-96c1-9a29d423d045",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79cc0618-1e9e-4ccd-9807-f58746545674",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//ul[4]/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ce9337f-eb3a-47ad-ac2b-86697e72065c",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João Guilherme Monteiro Reis"
+    }, {
+      "id": "f320a7e8-002c-492c-b13a-585a314efc2f",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "5.000,00"
+    }, {
+      "id": "f1aba2c5-888e-457e-82cc-900accfd9aaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0002-03-24"
+    }, {
+      "id": "e02a830a-fca7-406e-8aa5-a9468e69ba9a",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0020-03-24"
+    }, {
+      "id": "8affea48-d413-4d19-891c-a9f66e93c354",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0201-03-24"
+    }, {
+      "id": "49a42aab-9603-42ab-8e3a-eaae203617f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataEntrada",
+      "targets": [
+        ["id=dataEntrada", "id"],
+        ["name=dataEntrada", "name"],
+        ["css=#dataEntrada", "css:finder"],
+        ["xpath=//input[@id='dataEntrada']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2010-03-24"
+    }, {
+      "id": "6d539ed4-7e55-4776-a04d-d262cdda1144",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-09-23"
+    }, {
+      "id": "51d4deb9-55e9-4509-90f1-567082dee93d",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-09-23"
+    }, {
+      "id": "a757c517-1376-40b8-8e02-65e6d17d08d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0201-09-23"
+    }, {
+      "id": "e50fa350-f796-4163-a583-815d4c3c8d8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataSaida",
+      "targets": [
+        ["id=dataSaida", "id"],
+        ["name=dataSaida", "name"],
+        ["css=#dataSaida", "css:finder"],
+        ["xpath=//input[@id='dataSaida']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2016-09-23"
+    }, {
+      "id": "11018c93-9066-45a6-bcac-d680756edf91",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c377038-38fd-4864-87b6-d6ecc8f5f9dd",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Analista SysAdmin"
+    }, {
+      "id": "c419637c-27de-469d-92d5-0416190d6a31",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18e6193-b70f-4dab-a325-17f052c6a820",
+      "comment": "",
+      "command": "click",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e1cccbc-64d9-4914-a333-c1f4b4b3af26",
+      "comment": "",
+      "command": "click",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c836c26e-18a8-4b50-8a08-f4aff6e39a81",
+      "comment": "",
+      "command": "type",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=endereco.cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Goiana"
+    }, {
+      "id": "0c37ace6-1d7f-4f35-9ff1-b310981465fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=logradouro",
+      "targets": [
+        ["id=logradouro", "id"],
+        ["name=endereco.logradouro", "name"],
+        ["css=#logradouro", "css:finder"],
+        ["xpath=//input[@id='logradouro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Loteamento José Albino Pimentel"
+    }, {
+      "id": "88847b94-0c6e-432f-9215-824964bfe0fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=endereco.numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "f929bae2-276a-466c-b4c7-91cd9184dab9",
+      "comment": "",
+      "command": "type",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["name=endereco.complemento", "name"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Casa"
+    }, {
+      "id": "6d61c94a-ba6e-44f6-a8be-f237fc898c24",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=endereco.bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "Centro"
+    }, {
+      "id": "134b945a-9a26-44eb-9d03-efa28140e793",
+      "comment": "",
+      "command": "select",
+      "target": "id=uf",
+      "targets": [],
+      "value": "label=PA"
+    }, {
+      "id": "a8f6424b-3156-46aa-9ec7-d1d5f91460ac",
+      "comment": "",
+      "command": "select",
+      "target": "id=uf",
+      "targets": [],
+      "value": "label=PE"
+    }, {
+      "id": "d8d4141e-3413-4b0d-ad6e-076c23df98c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=endereco.cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div[6]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "55900-000"
+    }, {
+      "id": "a7bb067d-99de-4353-973f-f4bfc3a94c67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed98792e-ec27-498c-befd-c9b6a07185ef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c3b85dce-30c7-4b4d-a334-d05ffca51873",
+    "name": "Caso 036 - Edição de Funcionário previamente cadastrado",
+    "commands": [{
+      "id": "c2210a1e-9ad1-4750-950b-2894aeed179a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "daed17d5-3977-4407-805c-21394dda5726",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5726a8fb-2000-4305-974d-8f1f9e8ae8b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(3) span",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(3) span", "css:finder"],
+        ["xpath=//ul[4]/li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb557998-9b95-4e4e-b029-75ecb48d11c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oi-brush",
+      "targets": [
+        ["css=.oi-brush", "css:finder"],
+        ["xpath=//td[9]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a32c288-390a-498a-b9ef-a2180c7d7fa5",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2dd8035-c56b-4934-8700-77853b64e181",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4.500,00"
+    }, {
+      "id": "3b41435a-0acb-4262-9315-4f5bd2c836c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm",
+      "targets": [
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='cadastro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36220087-7998-417b-bb4e-ecaddbc224b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > span:nth-child(2)",
+      "targets": [
+        ["css=.btn > span:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Listar Funcionários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2d19e17-c76b-41d3-a717-8aa93205ec34",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c2a7398e-4f28-43be-886f-76935247e3d5",
+    "name": "Caso 037 - Exclusão de Funcionário cadastrado",
+    "commands": [{
+      "id": "ae9ae7ce-0dee-439d-9d5d-b50d7cbf4768",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75a24e22-3af0-4848-b0e8-e7f1fa474e82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa52b39e-0704-4f90-93ee-47fe267c5fc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(4) > .nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav:nth-child(4) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/funcionarios/listar')]", "xpath:href"],
+        ["xpath=//ul[4]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bffee38e-fe13-49d4-b489-f954f5aaf298",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_funcionarios/excluir/1",
+      "targets": [
+        ["id=btn_funcionarios/excluir/1", "id"],
+        ["css=#btn_funcionarios\\/excluir\\/1", "css:finder"],
+        ["xpath=//button[@id='btn_funcionarios/excluir/1']", "xpath:attributes"],
+        ["xpath=//td[9]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60eaab8b-c90e-4a3e-9584-b75def9e3913",
+      "comment": "",
+      "command": "click",
+      "target": "id=ok_confirm",
+      "targets": [
+        ["id=ok_confirm", "id"],
+        ["css=#ok_confirm", "css:finder"],
+        ["xpath=//button[@id='ok_confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac449b9-ca43-442b-aca5-b448d12de2ad",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "af796369-cd26-4c87-bb56-db0f89bb4463",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

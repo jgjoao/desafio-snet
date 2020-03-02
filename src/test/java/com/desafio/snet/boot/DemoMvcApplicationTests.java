@@ -1,4 +1,4 @@
-package com.mballem.curso.boot;
+package com.desafio.snet.boot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
